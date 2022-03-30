@@ -1,0 +1,1 @@
+let app = '这是app'

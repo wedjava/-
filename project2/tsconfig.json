@@ -1,0 +1,38 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./src/barring/**/*"
+    ],
+    // compilerOptions 编译器的选项
+    "compilerOptions": {
+        // target指定ES的版本
+        "target": "ES3",
+        // module 模块化规范
+        "module":"ES2015",
+        // lib 项目中的库
+        "lib": ["ES2016"],
+        // outDir 用来编译的文件放哪 比如现在dist会吧js文件放在dist文件夹里面
+        "outDir": "./dist",
+        // outFile 吧代码合并成功一个,设置后 全局作用域中的代码会在一个js下   ./dist/app.js就是把js文件都合并到app.js里面
+        // "outFile": "./dist/app.js"
+        // 是否对js进行编译  默认false 不编译
+        "allowJs": false,
+        // 检查js代码是否符合规范   默认false 不检查
+        "checkJs": false,
+        // *** 是否移出注释    默认false
+        "removeComments": false,
+        // noEmit--不生成编译后的文件
+        "noEmit": false,
+        // noEmitOnError--当有错误时不生成编译后的文件
+        "noEmitOnError": false,
+        // alwaysStrict--用来设置编译后的文件是否使用了一个模式 .默认false
+        "alwaysStrict": false,
+        // 严格检查
+        "noImplicitAny": true,
+        // 所有的严格检查的总开关
+        "strictNullChecks": false
+    }
+
+}
